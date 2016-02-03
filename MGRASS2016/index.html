@@ -75,13 +75,13 @@
                 <h1 align="center">Caratteri morfologici, sedimentari e antropici del Fiume Paglia</h1>
                                 
                 <h2>Informazioni</h2>                
-                <p>Il rischio idraulico è oggetto di ampia attenzione da parte di media, tecnici e ricercatori. Meno noto è il rischio connesso alla dinamica dei sedimenti e ai processi di erosione - sedimentazione, cioè il <i>rischio da dinamica d'alveo</i>.
-                <BR>Per evidenziare le problematiche connesse con la dinamica fluviale, è stata realizzata questa mappa che riporta i caratteri morfologico-sedimentari e antropici del F. Paglia (tributario del F. Tevere).
-                Inoltre, è stata realizzata una seconda <a href="variazioni_morfo.html">mappa</a> che mostra le modificazioni subite dal fiume stesso negli ultimi 200 anni.
-                <BR>Il Paglia si presta bene a questo scopo, perché manifesta importanti problemi di erosione e di approfondimento dell'alveo, dovuti soprattutto all'intensa attività estrattiva di inerti, perpetrata nei decenni passati, che ha determinato un forte deficit sedimentario nel sistema fluviale.
-                <BR>Le webmaps sono state realizzate con software FOSS:</p>
+                <p>Il rischio idraulico è oggetto di ampia attenzione da parte di media, tecnici e ricercatori. Meno noto è il rischio connesso alla dinamica dei sedimenti e ai processi di erosione - sedimentazione, cioè il <i>rischio da dinamica d'alveo</i>.</p>
+                <p>Per evidenziare le problematiche connesse con la dinamica fluviale, è stata realizzata questa mappa che riporta i caratteri morfologico-sedimentari e antropici del F. Paglia (tributario del F. Tevere).
+                Inoltre, è stata realizzata una seconda <a href="variazioni_morfo.html">mappa</a> che mostra le modificazioni subite dal fiume stesso negli ultimi 200 anni.</p>
+                <p>Il Paglia si presta bene a questo scopo, perché manifesta importanti problemi di erosione e di approfondimento dell'alveo, dovuti soprattutto all'intensa attività estrattiva di inerti, perpetrata nei decenni passati, che ha determinato un forte deficit sedimentario nel sistema fluviale.
+                <p>Le webmaps sono state realizzate con software FOSS:
                 
-                <p><ul> <li><a href="https://grass.osgeo.org/">GRASS</a> per la georeferenzazione dei documenti storici (mappe del Catasto Gregoriano – 1820; foto aree dei vo-<BR>li GAI – 1954 e AR08 – 1977 Regione Umbria);</li>
+                <ul> <li><a href="https://grass.osgeo.org/">GRASS</a> per la georeferenzazione dei documenti storici (mappe del Catasto Gregoriano – 1820; foto aree dei vo-<BR>li GAI – 1954 e AR08 – 1977 Regione Umbria);</li>
                 <li>il plugin GRASS di <a href="http://www.qgis.org/">Qgis</a> per la vettorializzazione degli elementi morfologici di interesse;</li>
                 <li>Qgis per la gestione e la stilizzazione dei dati;</li>
                 <li><a href="http://leafletjs.com/">Leaflet</a> per la realizzazione delle mappe.</li></ul></p>
@@ -153,7 +153,7 @@ Dati della mappa
 			zoomControl:false, maxZoom:18, minZoom:8
 		}).setView([42.74500,12.07], 13);
 		var hash = new L.Hash(map);
-		var additional_attrib = 'created by Andrea Fredduzzi and Pierluigi De Rosa<br>';
+		var additional_attrib = 'created by A. Fredduzzi and P. De Rosa<br>';
 		var feature_group = new L.featureGroup([]);
 		var raster_group = new L.LayerGroup([]);
 		var basemap_0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
@@ -944,7 +944,7 @@ var currentZoom = map.getZoom();
 	var overlays = [
                      {
                         groupName : "Morfologia",
-                        expanded  : true,
+                        expanded  : false,
                         layers    : { 
                             "Limite del bacino idrografico" : exp_LimitebacinoidrograficoJSON,
                             "Pianura fluviale" : exp_pianurajoin2JSON,
@@ -953,7 +953,7 @@ var currentZoom = map.getZoom();
                         }    
                         }, {
                         groupName : "Opere",
-                        expanded  : true,
+                        expanded  : false,
                         layers    : { 
                             "Alveo - difese di sponda"		: exp_difesespondaJSON,
                             "Alveo - opere trasversali"		: exp_OtrasversaliJSON,
@@ -962,21 +962,21 @@ var currentZoom = map.getZoom();
                         }
                         }, {
                         groupName : "Dati storici",
-                        expanded  : true,
+                        expanded  : false,
                         layers    : { 
                             "Traccia di paleoalveo"			: exp_paleoalveilineeJSON,
                             "Limite storico alveo (1954)"	: exp_alveo54lineeJSON
                         }
                         }, {
                         groupName : "Dati di campo",
-                        expanded  : true,
+                        expanded  : false,
                         layers    : { 
                             "Campioni granulometrici <img src='icons/blue-marker.svg'width='25px'/>": exp_granulTotJSON,
                             "Foto &nbsp<img src='icons/photo.svg'width='15px'/>": exp_fotoJSON                           
                         }
                         }, {
                         groupName : "Sistemi di riferimento",
-                        expanded  : true,
+                        expanded  : false,
                         layers    : { 
                             "Asse dell'alveo (2008)"		: exp_Assealveo2008JSON,
                             "Progressive asse dell'alveo (km)"	: exp_progressivealveoJSON,
@@ -997,11 +997,11 @@ var currentZoom = map.getZoom();
 	var control = L.Control.styledLayerControl(baseMaps, overlays, options);
     map.addControl(control);
 	
-	    new L.Control.Zoom({ position: 'topleft' }).addTo(map);
-		L.control.locate({position: 'topleft'}).addTo(map);
-		L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
+	    new L.Control.Zoom({ position: 'topright' }).addTo(map);
+		L.control.locate({position: 'topright'}).addTo(map);
+		L.control.scale({options: {position: 'bottomright',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
 		var sidebar = L.control.sidebar('sidebar').addTo(map);
-		L.Control.measureControl({position: 'topleft'}).addTo(map);
+		L.Control.measureControl({position: 'topright'}).addTo(map);
 	</script>
 </body>
 </html>

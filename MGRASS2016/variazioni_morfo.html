@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="css/own_style.css">
     <link rel="stylesheet" href="css/label.css" />
     <link href="css/leaflet.timeline.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/leaflet-sidebar2.css" />
+    <link rel="stylesheet" href="css/leaflet-sidebar.css" />
     <link rel="stylesheet" href="css/styledLayerControl.css" />
     <link rel="stylesheet" href="css/L.Control.Locate.css" />
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -101,13 +101,13 @@
                 <h1 align="center">Variazioni morfologiche del Fiume Paglia</h1>
                 
                 <h2>Informazioni</h2>                
-                <p>Il rischio idraulico è oggetto di ampia attenzione da parte di media, tecnici e ricercatori. Meno noto è il rischio connesso alla dinamica dei sedimenti e ai processi di erosione - sedimentazione, cioè il <i>rischio da dinamica d'alveo</i>.
-                <BR>Per evidenziare le problematiche connesse con la dinamica fluviale, è stata realizzata questa mappa che mostra le modificazioni subite dal fiume negli ultimi 200 anni.                
-                Inoltre, è stata realizzata una seconda <a href="index.html">mappa</a> che riporta i caratteri morfologico-sedimentari e antropici del F. Paglia (tributario del F. Tevere).
-                <BR>Il Paglia si presta bene a questo scopo, perché manifesta importanti problemi di erosione e di approfondimento dell'alveo, dovuti soprattutto all'intensa attività estrattiva di inerti, perpetrata nei decenni passati, che ha determinato un forte deficit sedimentario nel sistema fluviale.
-                <BR>Le webmaps sono state realizzate con software FOSS:</p>
-                
-                <p><ul> <li><a href="https://grass.osgeo.org/">GRASS</a> per la georeferenzazione dei documenti storici (mappe del Catasto Gregoriano – 1820; foto aree dei vo-<BR>li GAI – 1954 e AR08 – 1977 Regione Umbria);</li>
+                <p>Il rischio idraulico è oggetto di ampia attenzione da parte di media, tecnici e ricercatori. Meno noto è il rischio connesso alla dinamica dei sedimenti e ai processi di erosione - sedimentazione, cioè il <i>rischio da dinamica d'alveo</i>.</p>
+                <p>Per evidenziare le problematiche connesse con la dinamica fluviale, è stata realizzata questa mappa che mostra le modificazioni subite dal fiume Paglia negli ultimi 200 anni. Lo studio cambiamenti nel tempo di un corso d'acqua (analisi storica) è 
+                fondamentale per comprendere le tendenze evolutive del sistema fluviale e la reazione dello stesso agli impatti antropici.            
+                <br>Inoltre, è stata realizzata una seconda <a href="index.html">mappa</a> che riporta i caratteri morfologico-sedimentari e antropici del F. Paglia (tributario del F. Tevere).</p>
+                <p>Il Paglia si presta bene a questo scopo, perché manifesta importanti problemi di erosione e di approfondimento dell'alveo, dovuti soprattutto all'intensa attività estrattiva di inerti, perpetrata nei decenni passati, che ha determinato un forte deficit sedimentario nel sistema fluviale.
+                <p>Le webmaps sono state realizzate con software FOSS:
+                <ul> <li><a href="https://grass.osgeo.org/">GRASS</a> per la georeferenzazione dei documenti storici (mappe del Catasto Gregoriano – 1820; foto aree dei vo-<BR>li GAI – 1954 e AR08 – 1977 Regione Umbria);</li>
                 <li>il plugin GRASS di <a href="http://www.qgis.org/">Qgis</a> per la vettorializzazione degli elementi morfologici di interesse;</li>
                 <li>Qgis per la gestione e la stilizzazione dei dati;</li>
                 <li><a href="http://leafletjs.com/">Leaflet</a> per la realizzazione delle mappe.</li></ul></p>
@@ -134,6 +134,11 @@
 		       <h2>Istruzioni</h2>
 		       <p>Tramite il pannello di controllo dei layers, sulla destra, è possibile scegliere tra 4 mappe di sfondo, basate su <a href="http://www.openstreetmap.org/">Openstreetmap</a>, tra cui una vista aerea riferibile all'anno 2011.
 		       Oppure è possibile utilizzare come sfondo le ortofotocarte degli anni 2008, 2000 e 1988 fornite dal <a href="http://www.pcn.minambiente.it/GN/">Geoportale Nazionale</a>.
+		       <p>Alle mappe di sfondo sono sovrapposti 6 layers vettoriali (interrogabili) che riportano la configurazione morfologica dell'alveo riferibile agli anni 1820, 1954, 1977, 1999, 2008, 2012. </p>
+		       <P>Utilizzando la barra orizzontale in basso, tramite il tasto "play", si può avviare una animazione che mostra i cambiamenti nel tempo.
+		       <br>Tramite i pulsanti "forward" e "backward", si può cambiare la configurazione morfologica del fiume nei diversi periodi, passo per passo. </P>
+		       <h2>Legenda</h2>
+				<img src="pictures/legenda_v.svg" width="215px"/>
 		       
 		    </div>
             <div class="sidebar-pane" id="misure"><h2>Misure</h2></div>
@@ -215,7 +220,7 @@
         var blu = (hash >>  8) & 0xff;
         return 'rgb(' + red + ',' + grn + ',' + blu + ')';
       } 
-      var additional_attrib = 'created by Andrea Fredduzzi and Pierluigi De Rosa<br>';
+      var additional_attrib = 'created by A. Fredduzzi and P. De Rosa<br>';
       var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
       var osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
       var osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: additional_attrib + osmAttrib});
@@ -255,7 +260,7 @@
       });      
       
       
-      var map = L.map('map', {layers: [osm], center: new L.LatLng(42.74665,12.10176), zoom: 13 ,zoomControl: true});
+      var map = L.map('map', {layers: [osm], center: new L.LatLng(42.74665,12.10176), zoom: 13 ,zoomControl: false});
       
       var layerOrder=new Array();
       
@@ -356,12 +361,12 @@
         exclusive           : false
     };
 	
-	var control = L.Control.styledLayerControl(baseMaps, overlays, options);
-    map.addControl(control);	    
-
+	 var control = L.Control.styledLayerControl(baseMaps, overlays, options);
+     map.addControl(control);	    
+     new L.Control.Zoom({ position: 'topright' }).addTo(map);
      var sidebar = L.control.sidebar('sidebar').addTo(map);
-     //L.control.locate().addTo(map);
-     L.Control.measureControl({position: 'topleft'}).addTo(map);
+     //L.control.locate({position: 'topright'}).addTo(map);
+     L.Control.measureControl({position: 'topright'}).addTo(map);
      
     </script>
 
