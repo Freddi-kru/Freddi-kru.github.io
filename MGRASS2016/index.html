@@ -50,7 +50,12 @@
         }
         .custom .leaflet-popup-content-wrapper a {
               color:rgba(255,255,255,0.5);
-       }
+        }
+        
+        .imageborder { 
+              border: 1px solid #000; 
+              padding: 1px;
+         }
         
         </style>		
 		
@@ -61,9 +66,7 @@
         <ul class="sidebar-tabs" role="tablist">
             <li><a href="#home" role="tab"><i class="fa fa-home fa-lg"></i></a></li>
             <li><a href="#settings" role="tab"><i class="fa fa-map-o"></i></a></li>
-<!--
-            <li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
--->
+            <li><a href="#tour" role="tab"><i class="fa fa-picture-o"></i></a></li>
 <!--          
             <li><a href="#messages" role="tab"><i class="fa fa-envelope"></i></a></li>-->
             
@@ -103,9 +106,7 @@
                 <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 -->
 
-            </div>
-            <div class="sidebar-pane" id="profile"><h1>Profile</h1></div>
-            <div class="sidebar-pane" id="messages"><h1>Messages</h1></div>
+            </div>                       
             <div class="sidebar-pane" id="settings">
 				
 				<h2>Istruzioni</h2>
@@ -120,7 +121,27 @@
 				<h2>Legenda</h2>
 				<img src="pictures/legenda.svg" width="215px"/>
 			</div>
-            
+            <div class="sidebar-pane" id="tour">
+				
+				<h2>Tour "geomorfologico" del fiume</h2>
+				<h3><u>La fonte dei sedimenti</u></h3>
+				<p>Se guardiamo a monte della confluenza con il T. Fossatello. Si nota la totale assenza di corpi sedimentari (Foto 1).</p>
+				 <p align="center"><img src="pictures/rilev/DSC00662.JPG" width="320px" class="imageborder" /><br>
+                 <a href="#" onclick="CentraFoto(42.776926452196953,11.934368196319662);">Foto 1 - Centra la mappa sulla foto</a>  </p>
+                 <p>La situazione cambia diametralmente a valle della confluenza, dove corpi sedimentari sono molto numerosi e caratterizzati da sedimenti molto grossolani (Foto 2).</p>
+                 <p align="center"><img src="pictures/rilev/DSC00659.JPG" width="320px" class="imageborder" /><br>
+                 <a href="#" onclick="CentraFoto(42.77719240236829,11.9347352468109);">Foto 2 - Centra la mappa sulla foto</a>  </p>
+                 <p>Abbiamo trovato la <i>"fonte dei sedimenti"</i> di questo tratto terminale del F. Paglia, cioè gli apporti del T. Fossatello. Il torrente incide depositi caotici ed eterogenei (accumuli di frana), che contengono anche blocchi di grandi dimensioni,
+                 e che rappresentano una fonte di alimentazione molto importante per il collettore principale (Foto 3).</p>
+                 <p align="center"><img src="pictures/rilev/DSC00706.JPG" width="320px" class="imageborder" /><br>
+                 <a href="#" onclick="CentraFoto(42.786458614961198,11.926206350379401);">Foto 3 - Centra la mappa sulla foto</a>  </p>
+                 <p>In realtà tutto il tratto iniziale (gola di Torre Alfina) costituisce, assieme al T. Fossatello, la fonte dei sedimenti: la valle è molto stretta e i versanti sono caratterizzati da frequenti movimenti franosi (uno è visibile al centro della foto n. 4). Le frane, impostate sugli stessi depositi caotici della foto n. 3, riforniscono l'alveo di sedimenti, anche molto grossolani.</p>
+                 <p align="center"><img src="pictures/rilev/DSC00679.JPG" width="320px" class="imageborder" /><br>
+                 <a href="#" onclick="CentraFoto(42.778359899838676,11.937361257876695);">Foto 4 - Centra la mappa sulla foto</a>  </p>
+                 <h3><u>Il processo di approfondimento dell'alveo</u></h3>
+                 <p>Il Paglia manifesta importanti problemi di erosione e di approfondimento dell'alveo, dovuti soprattutto all'intensa attività estrattiva di inerti, perpetrata nei decenni passati, che ha determinato un forte deficit sedimentario nel sistema fluviale.  
+                 <p class="lorem">In preparazione ...</p>
+            </div>
         </div>
     </div>
 
@@ -159,7 +180,7 @@ Dati della mappa
 		var basemap_0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
 			attribution: additional_attrib + '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
 		});	
-		basemap_0.addTo(map);
+		
 		var basemap_1 = L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', { 
 			attribution: additional_attrib + 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data: &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
 		});
@@ -168,6 +189,7 @@ Dati della mappa
 		});
 		var mapbox_streets = L.tileLayer('https://{s}.tiles.mapbox.com/v4/freddi.m2nc4a39/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZnJlZGRpIiwiYSI6InhWUFRCYk0ifQ.qmjZlLlDE-EnjmTwp9Rf0Q', {
 	    attribution: additional_attrib + 'Map tiles by <a href="https://www.mapbox.com/">MapBox</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data: &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});
+		mapbox_streets.addTo(map);
 		var mapbox_satellite = L.tileLayer('https://{s}.tiles.mapbox.com/v4/freddi.m2nj71k6/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZnJlZGRpIiwiYSI6InhWUFRCYk0ifQ.qmjZlLlDE-EnjmTwp9Rf0Q', {
 	    attribution: additional_attrib + 'Map tiles by <a href="https://www.mapbox.com/">MapBox</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data: &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});
 		
@@ -666,10 +688,10 @@ Dati della mappa
 						iconAnchor:   [12, 12], // point of the icon which will correspond to marker's location (first coordinate is x, second y from the upper left corner of the icon)
 						popupAnchor:  [0, -14] // point from which the popup should open relative to the iconAnchor (first coordinate is x, second y from the upper left corner of the icon)
 					})
-				}).bindLabel(feature.properties.Id, {noHide: false})
+				}).bindLabel(feature.properties.Id, {noHide: true})
 			}}
 		);
-		var cluster_groupfotoJSON= new L.MarkerClusterGroup({showCoverageOnHover: true});
+		var cluster_groupfotoJSON= new L.MarkerClusterGroup({showCoverageOnHover: false});
 		cluster_groupfotoJSON.addLayer(exp_fotoJSON);
 		//add comment sign to hide this layer on the map in the initial view.
 		//exp_fotoJSON.addTo(map);
@@ -934,8 +956,8 @@ var currentZoom = map.getZoom();
                         groupName : "Sfondi TMS",
                         expanded : true,
                         layers    : {
-                            "OSM standard"		:  basemap_0,
                             "Mapbox"			:  mapbox_streets,
+                            "OSM standard"		:  basemap_0,
                             "Satellite (Mapbox)":  mapbox_satellite
                         }
                     }                       
@@ -1002,6 +1024,16 @@ var currentZoom = map.getZoom();
 		L.control.scale({options: {position: 'bottomright',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
 		var sidebar = L.control.sidebar('sidebar').addTo(map);
 		L.Control.measureControl({position: 'topright'}).addTo(map);
+		
+        function CentraFoto(lat,lon) {
+            map.setView(new L.LatLng(lat,lon), 18);
+            clean_map();
+            map.removeLayer(mapbox_streets);
+            mapbox_satellite.addTo(map);                       
+            exp_granulTotJSON.addTo(map);
+            exp_fotoJSON.addTo(map);
+		}
+        
 	</script>
 </body>
 </html>

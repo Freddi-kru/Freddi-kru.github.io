@@ -77,7 +77,10 @@
         margin: 0;
         margin-bottom: 0px;
       }
-
+        .imageborder { 
+              border: 1px solid #000; 
+              padding: 1px;
+         }
 
 
     </style>
@@ -138,10 +141,32 @@
 		       <P>Utilizzando la barra orizzontale in basso, tramite il tasto "play", si può avviare una animazione che mostra i cambiamenti nel tempo.
 		       <br>Tramite i pulsanti "forward" e "backward", si può cambiare la configurazione morfologica del fiume nei diversi periodi, passo per passo. </P>
 		       <h2>Legenda</h2>
-				<img src="pictures/legenda_v.svg" width="215px"/>
-		       
+				<img src="pictures/legenda_v.svg" width="215px"/>		       
 		    </div>
-            <div class="sidebar-pane" id="misure"><h2>Misure</h2></div>
+		    
+            <div class="sidebar-pane" id="misure"><h2>Misurare le trasformazioni</h2>
+            <p>I cambiamenti che il corso d'acqua ha subito nel tempo sono dovuti ad un forte deficit sedimentario del sistema, che ha innescato un intenso processo di erosione e approfondimento dell'alveo (vedi la sezione <a href="index.html#tour">"Il processo di approfondimento dell'alveo"</a> della mappa dei caratteri morfologico, sedimentari ed antropici) </p>
+            <p>La misura di alcuni parametri geomorfologici consente di quantificare il processo di trasformazione.</p>
+            <h3><u>Larghezza dell'alveo pieno</u></h3>
+            <p>Probabilmente il parametro più interessante è la larghezza media dell'alveo pieno (<i>bankfull width</i>), cioè la larghezza della porzione di alveo costituita dal canale (o dai canali) di magra e dai corpi sedimentari "nudi" e attivi (barre ghiaiose non vegetate).</p>
+            <p>Come si vede dal grafico sottostante la larghezza dell'alveo si è ridotta drasticamente nel tempo. A partire dagli anni cinquanta il fenomeno ha subito una netta accelerazione: per un periodo di circa 130 anni (1821-1954) l'alveo ha subito un restringimento abbastanza modesto (da 202 a 155 m).
+            <br>Successivamente, in circa cinquant'anni, il valore medio della larghezza è passato da 155 m (1954) a 97 m (1977), sino a 46 m (1999); in pratica dagli anni '50 al 1999 il corso d'acqua si è ristretto di circa il 70%. </p>
+            <p>Negli ultimi anni la tendenza si è invertita e l'alveo ha in parte riguadagnato gli spazi originari: la larghezza media è passata da 46 m del 1999 a 80 m del 2012. L'allargamento è avvenuto ad opera di alcuni importanti eventi di piena che si sono succeduti tra il 1999 al 2012.
+            <br>In particolare, i due più importanti si sono verificati nell'inverno 2010 e nel novembre 2012.</p>
+            <p align="center"><a href="grafici.html#chart1"><img src="pictures/grafici/largh.jpg" width="320px"/></a><br>
+            <h3><u>Indice di intrecciamento (BI) </u></h3>
+            <p>&Eacute; definito come numero di canali attivi, separati da barre misurato lungo una sezione trasversale. Il valore finale per il tratto considerato è ottenuto eseguendo la misura su più sezioni (in questo caso una ogni 10 m) e facendo la media.</p>
+            <p>Per le mappe del Catasto Gregoriano (1820) l'indice non è stato calcolato poiché si tratta di mappe catastali che riportano le sponde dell'alveo pieno, ma non i canali di magra e le barre.</p>
+            <p> Il grafico mostra come tra il 1954 e il 2008 l'indice è diminuito in maniera costante, tanto che il fiume ha cambiato completamente la sua configurazione morfologica, passando dal morfotipo spiccatamente <i>intrecciato</i> del 1954 (BI=1.56) al morfotipo monocanale a bassa sinuosità del 2008 (BI = 1.12).</p>
+            <p>La successiva fase di allrgamento ha comportato anche un leggero aumento dell'indice (BI=1.22)</p>
+            <p align="center"><a href="grafici.html#chart2"><img src="pictures/grafici/intrec.jpg" width="320px"/></a><br>
+            <h3><u>Il processo di approfondimento e la vegetazione </u></h3>
+            <p class="lorem">In preparazione ...</p>
+            
+            <HR>
+            <p>Un sito molto interessante per "toccare con mano" le trasformazioni subite dai fiumi, e più in generale, dal paesaggio dell'Umbria è <a href="http://siat.regione.umbria.it/paesaggineltempo/">Paesaggi nel tempo</a>. </p>
+            
+            </div>
             <div class="sidebar-pane" id="settings"><h1>Settings</h1></div>
         </div>
     </div>
@@ -260,7 +285,7 @@
       });      
       
       
-      var map = L.map('map', {layers: [osm], center: new L.LatLng(42.74665,12.10176), zoom: 13 ,zoomControl: false});
+      var map = L.map('map', {layers: [mapbox_streets], center: new L.LatLng(42.74665,12.10176), zoom: 13 ,zoomControl: false});
       
       var layerOrder=new Array();
       
