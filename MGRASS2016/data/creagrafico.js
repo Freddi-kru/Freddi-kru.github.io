@@ -9,7 +9,7 @@ function drawChart(div,datoingresso,xlabel) {
         var width = 600; //larghezza
         var height = 250;  // altezza
 
-        var zoom = 1.0;
+        var zoom = 1.5;
 
 
         chart.color(d3.scale.category10().range());
