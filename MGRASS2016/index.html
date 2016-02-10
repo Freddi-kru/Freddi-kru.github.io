@@ -57,6 +57,10 @@
               border: 1px solid #000; 
               padding: 1px;
          }
+        .imageborderWhite { 
+              border: 1px solid #ffffff; 
+              
+         }         
         
         </style>		
 		
@@ -140,7 +144,26 @@
                  <p align="center"><img src="pictures/rilev/DSC00679.JPG" width="85%" class="imageborder" /><br>
                  <a href="#" onclick="CentraFoto(42.778359899838676,11.937361257876695);">Foto 4 - Centra la mappa sulla foto</a>  </p>
                  <h3><u>Il processo di approfondimento dell'alveo</u></h3>
-                 <p>Il Paglia manifesta importanti problemi di erosione e di approfondimento dell'alveo, dovuti soprattutto all'intensa attività estrattiva di inerti, perpetrata nei decenni passati, che ha determinato un forte deficit sedimentario nel sistema fluviale.  
+                 <p>Il Paglia manifesta importanti problemi di erosione e di approfondimento dell'alveo, dovuti soprattutto all'intensa attività estrattiva di inerti, perpetrata nei decenni passati che ha determinato un forte deficit sedimentario nel sistema fluviale. </p>
+                 <p>Possiamo renderci conto del processo di approfondimento osservando, ovviamente, l'alveo e le sponde del fiume, ma anche le condizioni delle opere presenti nell'alveo.</p>
+                 <p>Ad esempio, osservando la spalla del vecchio ponte della strada provinciale SP 48, distrutto durante la piena del 1937, ci si accorge come le fondazioni dell'opera si trovino sopraelevate di circa 5 m rispetto al fondo attuale del canale. Ciò costituisce la prima chiara evidenza della rapidità del processo di approfondimento subito dall'alveo.</p> 
+                 <p align="center"><img src="pictures/rilev/ponteSP48b.jpg" width="85%" class="imageborder" /><br>
+                 <a href="#" onclick="CentraFoto(42.771908,12.034029);">Foto 6 - Centra la mappa sulla foto</a>  </p>
+                 <p>Osservando i ponti delle infrastrutture presenti sulla pianura alluvionale, tutti i piloni all'interno dell'alveo sono stati sottofondati. Ad esempio il pilone centrale del ponte della linea ferroviaria Roma - Firenze presenta più ordini di sottofondazione (Foto 8).</p>
+                 <p align="center"><img src="pictures/rilev/IMG_20120906_132136.jpg" width="85%" class="imageborder" /><br> 
+                 <a href="#" onclick="CentraFoto(42.773236,12.039012);"> Foto 7: Ponte della linea ferroviaria Roma - Firenze (Alta Velocità) - Centra la mappa sulla foto</a></p>
+                 <p align="center"><img src="pictures/rilev/IMG_20120906_141923.jpg" width="85%" class="imageborder" /><br> 
+                 <a href="#" onclick="CentraFoto(42.776312,12.046882);"> Foto 8: Ponte della linea ferroviaria Roma - Firenze (Linea normale) - Centra la mappa sulla foto</a></p>
+                 <p>Osservando l'alveo, si nota come il fiume ha eroso completamente i suoi sedimenti alluvionali e ha proseguito incidendo (in alcuni punti per oltre due metri) il substrato, costituito dalle argille marine plioceniche (Foto 15).</p>
+                 <p align="center"><img src="pictures/rilev/IMG_20120907_152457.jpg" width="85%" class="imageborder" /><br> 
+                 <a href="#" onclick="CentraFoto(42.748304,12.09829);"> Foto 15 - Centra la mappa sulla foto</a></p>
+                 <p>La foto n. 12 mostra come per ampi tratti il fiume scorra sul substrato argilloso pliocenico. Questo fa sì che il flusso idrico sia molto più veloce, perchè le argille hanno un coefficente di scabrezza molto più basso dei sedimenti fluviali. Inoltre si hanno degli effeti negativi sull'habitat e quindi sulla riproduzione della fauna ittica.</p>
+                 <p align="center"><img src="pictures/rilev/IMG_20120907_114917.jpg" width="85%" class="imageborder" /><br> 
+                 <a href="#" onclick="CentraFoto(42.758404,12.080747);"> Foto 12 - Centra la mappa sulla foto</a></p>
+                 <p>Avvicinandosi all'abitato di Orvieto Scalo, si nota come il substrato non affiora più sulla sponda, ma solo in corrispondenza del canale (Foto 18). Questo elemento indica che l'approfondimento dell'alveo è minore. La causa è la costruzione di una briglia, situata a valle di Ponte Adunata. <u>Tutto ciò aumenta le condizioni di rischio idraulico della zona di Orvieto Scalo (la più antropizzata)</u>: l'alveo a monte, per effetto dell'approfondimento, riesce a smaltire verso valle più efficacemente le portate liquide che, invece, in questa zona causano esondazioni sempre più frequenti.</p>
+                 <p align="center"><img src="pictures/rilev/IMG_20120908_084659.jpg" width="85%" class="imageborder" /><br> 
+                 <a href="#" onclick="CentraFoto(42.728116,12.126984);"> Foto 18 - Centra la mappa sulla foto</a></p>
+                 <h3><u>L'energia (<i>stream power</i>) del fiume, la dinamica dei sedimenti e le opere in alveo</u></h3>
                  <p class="lorem">In preparazione ...</p>
             </div>
         </div>
@@ -471,7 +494,7 @@ Dati della mappa
 		//add comment sign to hide this layer on the map in the initial view.
 		feature_group.addLayer(exp_alveo2012join2JSON);
 		function pop_difesesponda(feature, layer) {					
-			var popupContent = '<h3>Difese di sponda</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Tipologia:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) +'</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/' + Autolinker.link(String(feature.properties['Scheda'])) +'">Scheda di rilevamento</a>'+ '</td></tr></table>'+'<img src="pictures/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px"/>';
+			var popupContent = '<h3>Difese di sponda</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Tipologia:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) +'</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/' + Autolinker.link(String(feature.properties['Scheda'])) +'">Scheda di rilevamento</a>'+ '</td></tr></table>'+'<img src="pictures/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -502,7 +525,7 @@ Dati della mappa
 		//add comment sign to hide this layer on the map in the initial view.
 		//feature_group.addLayer(exp_difesespondaJSON);
 		function pop_Otrasversali(feature, layer) {					
-			var popupContent = '<h3>Opere trasversali</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Tipologia:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) +'</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/' + Autolinker.link(String(feature.properties['Scheda'])) +'">Scheda di rilevamento</a>'+ '</td></tr></table>'+'<img src="pictures/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px"/>';
+			var popupContent = '<h3>Opere trasversali</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Tipologia:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) +'</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/' + Autolinker.link(String(feature.properties['Scheda'])) +'">Scheda di rilevamento</a>'+ '</td></tr></table>'+'<img src="pictures/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -675,7 +698,7 @@ Dati della mappa
 		//exp_granulTotJSON.addTo(map);
 		
 		function pop_foto(feature, layer) {					
-			var popupContent = '<h3>Documentazione fotografica</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Azimut:</th><td>' + Autolinker.link(String(feature.properties['Azimut'])) +'° dal nord'+'</td></tr><tr><th scope="row">Data di scatto:</th><td>' + Autolinker.link(String(feature.properties['Data'])) + '</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/rilev/' + Autolinker.link(String(feature.properties['Link'])) +'">Apri foto</a>'+'</td></tr></table>'+'<img src="pictures/rilev/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px"/>'+'<b>Descrizione:</b> '+ Autolinker.link(String(feature.properties['Descrizio']));
+			var popupContent = '<h3>Documentazione fotografica</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Azimut:</th><td>' + Autolinker.link(String(feature.properties['Azimut'])) +'° dal nord'+'</td></tr><tr><th scope="row">Data di scatto:</th><td>' + Autolinker.link(String(feature.properties['Data'])) + '</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/rilev/' + Autolinker.link(String(feature.properties['Link'])) +'">Apri foto</a>'+'</td></tr></table>'+'<img src="pictures/rilev/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>'+'<b>Descrizione:</b> '+ Autolinker.link(String(feature.properties['Descrizio']));
 			layer.bindPopup(popupContent, {'className':'custom'});
 		}
 
