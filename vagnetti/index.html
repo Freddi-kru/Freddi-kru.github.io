@@ -58,7 +58,7 @@
         var bounds_group = new L.featureGroup([]);
         var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-            maxZoom: 20
+            maxZoom: 19
         });
         basemap0.addTo(map);
         var basemap1 = L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', {
@@ -72,7 +72,8 @@
                 transparent: true,
                 continuousWorld : true,
                 opacity: 1.0,
-                attribution: 'Satellite: &copy; <a href="http://www.realvista.it/website/Joomla/">Realvista</a>'
+                attribution: 'Satellite: &copy; <a href="http://www.realvista.it/website/Joomla/">Realvista</a>',
+		maxZoom: 18
             });
         
         function setBounds() {
@@ -171,7 +172,7 @@
 			return this._div;
 	    };
 	    title.update = function () {
-			this._div.innerHTML = '<h2>Caro Conte Vlad</h2> La veggo buia, sarà una bella caccia al tesoro trovare sta civile abitazione'
+			this._div.innerHTML = '<h3>Caro Vlad</h3> la veggo buia, sarà una bella caccia al tesoro trovare sta civile abitazione'
 		};
         title.addTo(map);
         var baseMaps = {'OSM': basemap0, 'Stamen Toner': basemap1, "Satellite (e-Geos RealVista 1.0)": basemap2};
