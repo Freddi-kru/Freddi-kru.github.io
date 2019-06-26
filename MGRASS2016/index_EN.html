@@ -119,7 +119,7 @@
 		<BR>Vector layers, that can be interrogated (<i>popup</i>), are superimposed on the background maps.
 		<BR>The layers show:
 		<ul><li>the main morphological elements of the <b><u>flood plain</b></u> (slope boundaries, alluvial fans, river terraces, landslides) and of the <b><u>river bed</u></b> (sedimentary bodies, channels);</li>
-		<b><u><li>the hydraulic works</u></b> (transversal and longitudinal), to which are associated a photo and the link to a census sheet;</li>
+		<b><u><li>the hydraulic works</u></b> (transversal and longitudinal), to which are associated a photo and the link to a survey sheet;</li>
 		<li><b><u>Historical informations</u></b> (the 1954 river bed boundary and ancient river bed paths, wich age is not nown);</li>
 		<li><b><u>Survey data</u></b> (interesting photographs for defining the morphological status of the river system and the points at which the granulometric sampling  of the riverbed was carried out).</li></ul></p>
 				
@@ -236,7 +236,7 @@ Dati della mappa
 		feature_group.addLayer(exp_LimitebacinoidrograficoJSON);
 		
 		function pop_pianurajoin(feature, layer) {					
-			var popupContent = '<h3>Pianura fluviale</h3><table><tr><th scope="row">Unità morfolgica</th><td>' + Autolinker.link(String(feature.properties['descrizio'])) + '</td></tr></table>';
+			var popupContent = '<h3>Alluvial plain</h3><table><tr><th scope="row">Morphological unit</th><td>' + Autolinker.link(String(feature.properties['descrizio'])) + '</td></tr></table>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -306,7 +306,7 @@ Dati della mappa
 		//add comment sign to hide this layer on the map in the initial view.
 		//feature_group.addLayer(exp_pianurajoinJSON);
 		function pop_pianurajoin2(feature, layer) {					
-			var popupContent = '<h3>Pianura fluviale</h3><table><tr><th scope="row">Unità morfologica:</th><td>' + Autolinker.link(String(feature.properties['descrizio'])) + '</td></tr></table>';
+			var popupContent = '<h3>Alluvial plain</h3><table><tr><th scope="row">Morphological unit:</th><td>' + Autolinker.link(String(feature.properties['descrizio'])) + '</td></tr></table>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -435,7 +435,7 @@ Dati della mappa
 		//add comment sign to hide this layer on the map in the initial view.
 		//feature_group.addLayer(exp_alveo2008join2JSON);
 		function pop_alveo2012join2(feature, layer) {					
-			var popupContent = '<h3>Alveo (2012)</h3><table><tr><th scope="row">Unità morfolgica:</th><td>' + Autolinker.link(String(feature.properties['descrizio'])) + '</td></tr></table>';
+			var popupContent = '<h3>Riverbed (2012)</h3><table><tr><th scope="row">Morphological unit:</th><td>' + Autolinker.link(String(feature.properties['descrizio'])) + '</td></tr></table>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -494,7 +494,7 @@ Dati della mappa
 		//add comment sign to hide this layer on the map in the initial view.
 		feature_group.addLayer(exp_alveo2012join2JSON);
 		function pop_difesesponda(feature, layer) {					
-			var popupContent = '<h3>Difese di sponda</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Tipologia:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) +'</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/' + Autolinker.link(String(feature.properties['Scheda'])) +'">Scheda di rilevamento</a>'+ '</td></tr></table>'+'<img src="pictures/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>';
+			var popupContent = '<h3>Riverbed - bank protections </h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Type:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) +'</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/' + Autolinker.link(String(feature.properties['Scheda'])) +'">Survey sheet</a>'+ '</td></tr></table>'+'<img src="pictures/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -525,7 +525,7 @@ Dati della mappa
 		//add comment sign to hide this layer on the map in the initial view.
 		//feature_group.addLayer(exp_difesespondaJSON);
 		function pop_Otrasversali(feature, layer) {					
-			var popupContent = '<h3>Opere trasversali</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Tipologia:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) +'</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/' + Autolinker.link(String(feature.properties['Scheda'])) +'">Scheda di rilevamento</a>'+ '</td></tr></table>'+'<img src="pictures/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>';
+			var popupContent = '<h3>Riverbed - transverse works </h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Type:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) +'</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/' + Autolinker.link(String(feature.properties['Scheda'])) +'">Survey sheet</a>'+ '</td></tr></table>'+'<img src="pictures/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -586,7 +586,7 @@ Dati della mappa
 		//add comment sign to hide this layer on the map in the initial view.
 		//feature_group.addLayer(exp_pennelliJSON);
 		function pop_Opianura(feature, layer) {					
-			var popupContent = '<h3>Rilevati</h3><table><tr><th scope="row">Tipologia:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) + '</td></tr><tr><th scope="row">Note:</th><td>' + Autolinker.link(String(feature.properties['Note'])) + '</td></tr></table>';
+			var popupContent = '<h3>Alluvial plain - levees</h3><table><tr><th scope="row">Type:</th><td>' + Autolinker.link(String(feature.properties['Tipologia'])) + '</td></tr><tr><th scope="row">Note:</th><td>' + Autolinker.link(String(feature.properties['Note'])) + '</td></tr></table>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -635,7 +635,7 @@ Dati della mappa
 		//add comment sign to hide this layer on the map in the initial view.
 		//feature_group.addLayer(exp_OpianuraJSON);
 		function pop_paleoalveilinee(feature, layer) {					
-			var popupContent = '<h3>Traccia di paleoalveo</h3><table><tr><th scope="row">Data:</th><td>' + Autolinker.link(String(feature.properties['data'])) + '</td></tr></table>';
+			var popupContent = '<h3>Ancient riverbed path</h3><table><tr><th scope="row">Date:</th><td>' + Autolinker.link(String(feature.properties['data'])) + '</td></tr></table>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -676,7 +676,7 @@ Dati della mappa
 		//feature_group.addLayer(exp_alveo54lineeJSON);
 		
 		function pop_granulTot(feature, layer) {					
-		var popupContent = '<h3>Campioni granulometrici</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Anno di prelievo:</th><td>' + Autolinker.link(String(feature.properties['Anno'])) + '</td></tr><tr><th scope="row">Componente alveo:</th><td>' + Autolinker.link(String(feature.properties['Componente'])) + '</td></tr><tr><th scope="row">N. di clasti:</th><td>' + Autolinker.link(String(feature.properties['Clasti'])) + '</td></tr><tr><th scope="row">D50 (mm):</th><td>' + Autolinker.link(String(feature.properties['D50'])) + '</td></tr></table>';
+		var popupContent = '<h3>Granulometric samples</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Sampling year:</th><td>' + Autolinker.link(String(feature.properties['Anno'])) + '</td></tr><tr><th scope="row">Riverbed unit:</th><td>' + Autolinker.link(String(feature.properties['Componente'])) + '</td></tr><tr><th scope="row">N. of clasts:</th><td>' + Autolinker.link(String(feature.properties['Clasti'])) + '</td></tr><tr><th scope="row">D50 (mm):</th><td>' + Autolinker.link(String(feature.properties['D50'])) + '</td></tr></table>';
 			layer.bindPopup(popupContent,{'className':'custom'});
 		}
 
@@ -698,7 +698,7 @@ Dati della mappa
 		//exp_granulTotJSON.addTo(map);
 		
 		function pop_foto(feature, layer) {					
-			var popupContent = '<h3>Documentazione fotografica</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Azimut:</th><td>' + Autolinker.link(String(feature.properties['Azimut'])) +'° dal nord'+'</td></tr><tr><th scope="row">Data di scatto:</th><td>' + Autolinker.link(String(feature.properties['Data'])) + '</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/rilev/' + Autolinker.link(String(feature.properties['Link'])) +'">Apri foto</a>'+'</td></tr></table>'+'<img src="pictures/rilev/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>'+'<b>Descrizione:</b> '+ Autolinker.link(String(feature.properties['Descrizio']));
+			var popupContent = '<h3>Potographic documentation</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Azimut:</th><td>' + Autolinker.link(String(feature.properties['Azimut'])) +'° from north'+'</td></tr><tr><th scope="row">Date:</th><td>' + Autolinker.link(String(feature.properties['Data'])) + '</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/rilev/' + Autolinker.link(String(feature.properties['Link'])) +'">Open photo</a>'+'</td></tr></table>'+'<img src="pictures/rilev/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>'+'<b>Description:</b> '+ Autolinker.link(String(feature.properties['Descrizio']));
 			layer.bindPopup(popupContent, {'className':'custom'});
 		}
 
