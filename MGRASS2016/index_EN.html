@@ -698,7 +698,7 @@ Dati della mappa
 		//exp_granulTotJSON.addTo(map);
 		
 		function pop_foto(feature, layer) {					
-			var popupContent = '<h3>Potographic documentation</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Azimuth:</th><td>' + Autolinker.link(String(feature.properties['Azimut'])) +'° from north'+'</td></tr><tr><th scope="row">Date:</th><td>' + Autolinker.link(String(feature.properties['Data'])) + '</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/rilev/' + Autolinker.link(String(feature.properties['Link'])) +'">Open photo</a>'+'</td></tr></table>'+'<img src="pictures/rilev/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>'+'<b>Description:</b> '+ Autolinker.link(String(feature.properties['Descrizio']));
+			var popupContent = '<h3>Photographic documentation</h3><table><tr><th scope="row">Id:</th><td>' + Autolinker.link(String(feature.properties['Id'])) + '</td></tr><tr><th scope="row">Azimuth:</th><td>' + Autolinker.link(String(feature.properties['Azimut'])) +'° from north'+'</td></tr><tr><th scope="row">Date:</th><td>' + Autolinker.link(String(feature.properties['Data'])) + '</td></tr><tr><th scope="row">Link:</th><td><a href="pictures/rilev/' + Autolinker.link(String(feature.properties['Link'])) +'">Open photo</a>'+'</td></tr></table>'+'<img src="pictures/rilev/'+Autolinker.link(String(feature.properties['Link']))+'" width="300px" class="imageborderWhite"/>'+'<b>Description:</b> '+ Autolinker.link(String(feature.properties['Descrizio']));
 			layer.bindPopup(popupContent, {'className':'custom'});
 		}
 
