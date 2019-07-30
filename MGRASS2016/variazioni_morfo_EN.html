@@ -292,7 +292,7 @@
       var layerOrder=new Array();
       
       function pop_alvei(feature, layer) {					
-			var popupContent = '<b>Data: </b>' + Autolinker.link(String(feature.properties['start'])) + '<BR><b>Unità morfolgica: </b>' + Autolinker.link(String(feature.properties['descrizio'])) ;
+			var popupContent = '<b>Date: </b>' + Autolinker.link(String(feature.properties['start'])) + '<BR><b>Morphologic units: </b>' + Autolinker.link(String(feature.properties['descrizio'])) ;
 			layer.bindPopup(popupContent, {'className':'custom'});
 		}      
       
@@ -368,7 +368,7 @@
     ];
     var overlays = [
                      {
-                        groupName : "Morphological variations",
+                        groupName : "Vector layers",
                         expanded  : true,
                         layers    : {                             
                             "Watershed boundaries"     : exp_LimitebacinoidrograficoJSON
