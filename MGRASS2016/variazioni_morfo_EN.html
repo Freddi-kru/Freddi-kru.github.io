@@ -292,7 +292,7 @@
       var layerOrder=new Array();
       
       function pop_alvei(feature, layer) {					
-			var popupContent = '<b>Date: </b>' + Autolinker.link(String(feature.properties['start'])) + '<BR><b>Morphologic units: </b>' + Autolinker.link(String(feature.properties['descrizioEN'])) ;
+			var popupContent = '<b>Date: </b>' + Autolinker.link(String(feature.properties['start'])) + '<BR><b>Morphologic units: </b>' + Autolinker.link(String(feature.properties['decrizioEN'])) ;
 			layer.bindPopup(popupContent, {'className':'custom'});
 		}      
       
