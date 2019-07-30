@@ -102,12 +102,12 @@
         <div class="sidebar-content active">
             <div class="sidebar-pane" id="home">
 				
-                <h1 class="sidebar-header">Morphological variations of the Paglia River<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                <h1 class="sidebar-header">Morphological variations of the R. Paglia<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
                 
                                 
                 <p>The hydraulic risk is subject to wide attention by the media, technicians and researchers. Less known is the risk associated with sediment dynamics and erosion - sedimentation processes, ie <i>the riverbed dynamic risk</i>.</p>
-                <p>To highlight the problems associated with the fluvial dynamics, it has been realized this map which shows the he changes undergone by the Paglia river over the last 200 years. The study of morphological variations over time of a river (historical analysis) is essential to understand the evolutionary trends of the river system and its reaction to antropic impacts.            
-                <br>Furthermore, a second <a href="index_EN.html">mappa</a> was made showing the the morphological, sedimentary and antrhopic features of the Paglia River (tributary of the Tiber River).</p>
+                <p>To highlight the problems associated with the fluvial dynamics, it has been realized this map which shows the changes undergone by the Paglia river over the last 200 years. The study of morphological variations over time of a river (historical analysis) is essential to understand the evolutionary trends of the river system and its reaction to antropic impacts.            
+                <br>Furthermore, a second <a href="index_EN.html">map</a> was made showing the the morphological, sedimentary and antrhopic features of the Paglia River (tributary of the Tiber River).</p>
                 <p>The Paglia River is well suited for this purpose, because it shows intense erosion and riverbed incision, due to the mining of aggregates. This activity was carried out extensively in the past decades and gave rise to a strong sedimentary deficit in the river system.</p>
                <p>The web maps were made with FLOSS software.
                 
@@ -348,7 +348,7 @@
 	
 	var baseMaps = [
                     { 
-                        groupName : "Sfondi TMS",
+                        groupName : "TMS Background",
                         expanded : true,
                         layers    : {
                             "OSM standard"			: osm,
@@ -357,21 +357,21 @@
                             "Mapbox aerial (2011)"	:  mapbox_satellite
                         }
                         },{
-                        groupName : "Sfondi WMS",
+                        groupName : "WMS Background",
                         expanded  : true,
                         layers    : { 
-                            'Ortofoto 1988 (WMS)':orto_88,
-		                    'Ortofoto 2000 (WMS)':orto_2000,
-		                    'Ortofoto 2008 (WMS)':orto_2008
+                            'Orthophoto 1988 (WMS)':orto_88,
+		            'Orthophoto 2000 (WMS)':orto_2000,
+		            'Orthophoto 2008 (WMS)':orto_2008
                         }
                     }                       
     ];
     var overlays = [
                      {
-                        groupName : "Variazioni morfologiche",
+                        groupName : "Morphological variations",
                         expanded  : true,
                         layers    : {                             
-                            "Limite del bacino idrografico"     : exp_LimitebacinoidrograficoJSON
+                            "Watershed boundaries"     : exp_LimitebacinoidrograficoJSON
                                                       
                         }    
 	                    }
