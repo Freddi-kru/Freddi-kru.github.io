@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
+        
+        <link rel="stylesheet" href="css/L.Control.Basemaps.css" />
+        
         <style>
         html, body, #map {
             width: 100%;
@@ -33,6 +36,9 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet-measure.js"></script>
+        
+        <script src="js/L.Control.Basemaps-min.js"></script>
+        
         <script src="data/ZoneProtezione_2.js"></script>
         <script src="data/ZoneRiserva_3.js"></script>
         <script src="data/ZoneRispettoAllargata_4.js"></script>
@@ -67,19 +73,20 @@
         var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             pane: 'pane_OpenStreetMap_0',
             opacity: 1.0,
-            attribution: '',
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
             minZoom: 1,
             maxZoom: 28,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
         layer_OpenStreetMap_0;
+        
         map.createPane('pane_GoogleSatellite_1');
         map.getPane('pane_GoogleSatellite_1').style.zIndex = 401;
         var layer_GoogleSatellite_1 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             pane: 'pane_GoogleSatellite_1',
             opacity: 1.0,
-            attribution: '',
+            attribution: 'Dati cartografici &#9400; 2017 Google - <a href="https://www.google.com/intl/it_it/help/terms_maps.html">Termini</a',
             minZoom: 1,
             maxZoom: 28,
             minNativeZoom: 0,
@@ -87,6 +94,7 @@
         });
         layer_GoogleSatellite_1;
         map.addLayer(layer_GoogleSatellite_1);
+        
         function pop_ZoneProtezione_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -543,9 +551,64 @@
         });
         bounds_group.addLayer(layer_Areadinterese_8);
         map.addLayer(layer_Areadinterese_8);
-        var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/Areadinterese_8.png" /> Area d\'interese': layer_Areadinterese_8,'<img src="legend/Punticaptazione_7.png" /> Punti captazione': layer_Punticaptazione_7,'<img src="legend/ZoneTutelaAssoluta_6.png" /> Zone Tutela Assoluta': layer_ZoneTutelaAssoluta_6,'<img src="legend/ZoneRispettoRistretta_5.png" /> Zone Rispetto Ristretta': layer_ZoneRispettoRistretta_5,'<img src="legend/ZoneRispettoAllargata_4.png" /> Zone Rispetto Allargata': layer_ZoneRispettoAllargata_4,'<img src="legend/ZoneRiserva_3.png" /> Zone Riserva': layer_ZoneRiserva_3,'<img src="legend/ZoneProtezione_2.png" /> Zone Protezione': layer_ZoneProtezione_2,"Google Satellite": layer_GoogleSatellite_1,"OpenStreetMap": layer_OpenStreetMap_0,},{collapsed:false}).addTo(map);
-        setBounds();
+        
+        //titolo 
+        var title = new L.Control();
+		title.onAdd = function (map) {
+			this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+			this.update();
+			return this._div;
+	    };
+	    title.update = function () {
+			this._div.innerHTML = "<h2>Pozzi e zone di rispetto</h2> Tutti i dati (pozzi e zone di rispetto) sono interrogabiili al click del mouse"
+		};
+        title.addTo(map);
+                  
+        //"Google Satellite": layer_GoogleSatellite_1,"OpenStreetMap": layer_OpenStreetMap_0,
+        
+        var baseMaps = {"Google Satellite": layer_GoogleSatellite_1,"OpenStreetMap": layer_OpenStreetMap_0,};
+        L.control.layers(baseMaps,{'<img src="legend/Areadinterese_8.png" /> Area d\'interese': layer_Areadinterese_8,'<img src="legend/Punticaptazione_7.png" /> Punti captazione': layer_Punticaptazione_7,'<img src="legend/ZoneTutelaAssoluta_6.png" /> Zone Tutela Assoluta': layer_ZoneTutelaAssoluta_6,'<img src="legend/ZoneRispettoRistretta_5.png" /> Zone Rispetto Ristretta': layer_ZoneRispettoRistretta_5,'<img src="legend/ZoneRispettoAllargata_4.png" /> Zone Rispetto Allargata': layer_ZoneRispettoAllargata_4,'<img src="legend/ZoneRiserva_3.png" /> Zone Riserva': layer_ZoneRiserva_3,'<img src="legend/ZoneProtezione_2.png" /> Zone Protezione': layer_ZoneProtezione_2,},{collapsed:false}).addTo(map);
+       
+        
+        //~ var Basemaps = [
+    //~ L.tileLayer('//{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
+        //~ attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        //~ subdomains: 'abcd',
+        //~ maxZoom: 20,
+        //~ minZoom: 0,
+        //~ label: 'Toner Lite'  // optional label used for tooltip
+    //~ }),
+    //~ L.tileLayer('//{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
+        //~ attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        //~ subdomains: 'abcd',
+        //~ maxZoom: 20,
+        //~ minZoom: 0,
+        //~ label: 'Toner'
+    //~ }),
+    //~ L.tileLayer('//{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
+        //~ attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        //~ subdomains: 'abcd',
+        //~ maxZoom: 16,
+        //~ minZoom: 1,
+        //~ label: 'Watercolor'
+    //~ }),
+    //~ L.tileLayer.wms('https://firms.modaps.eosdis.nasa.gov/wms/viirs', {
+        //~ layers: 'NASA FIRMS',
+        //~ label: 'NASA Fire Hotspots'
+    //~ })
+//~ ];
+
+//~ map.addControl(L.control.basemaps({
+    //~ basemaps: Basemaps,
+    //~ tileX: 0,  // tile X coordinate
+    //~ tileY: 0,  // tile Y coordinate
+    //~ tileZ: 1   // tile zoom level
+//~ }));
+        
+ setBounds();        
+        
+        
+        
         </script>
     </body>
 </html>
