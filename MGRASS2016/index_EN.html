@@ -205,6 +205,8 @@ Dati della mappa
 			attribution: additional_attrib + '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 		});	
 		
+		mapbox_streets.addTo(map);
+			
 		var basemap_1 = L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', { 
 			attribution: additional_attrib + 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data: &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
 		});
@@ -213,10 +215,8 @@ Dati della mappa
 		});
 		var mapbox_streets = L.tileLayer('https://{s}.tiles.mapbox.com/v4/freddi.m2nc4a39/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZnJlZGRpIiwiYSI6InhWUFRCYk0ifQ.qmjZlLlDE-EnjmTwp9Rf0Q', {
 	    attribution: additional_attrib + 'Map tiles &copy; <a href="https://www.mapbox.com/about/maps/">MapBox</a> - Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
-		
-			<!--mapbox_streets.addTo(map);-->
-		
-			var mapbox_satellite = L.tileLayer('https://{s}.tiles.mapbox.com/v4/freddi.m2nj71k6/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZnJlZGRpIiwiYSI6InhWUFRCYk0ifQ.qmjZlLlDE-EnjmTwp9Rf0Q', {
+				
+		var mapbox_satellite = L.tileLayer('https://{s}.tiles.mapbox.com/v4/freddi.m2nj71k6/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZnJlZGRpIiwiYSI6InhWUFRCYk0ifQ.qmjZlLlDE-EnjmTwp9Rf0Q', {
 	    attribution: additional_attrib + 'Map tiles &copy; <a href="https://www.mapbox.com/about/maps/">MapBox</a> - Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
 		
 		var google_ibrida = L.tileLayer('http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}', { 
@@ -986,8 +986,7 @@ var currentZoom = map.getZoom();
                     { 
                         groupName : "TMS Background",
                         expanded : false,
-                        layers    : {
-                            "Mapbox"			:  mapbox_streets,
+                        layers    : {                            
                             "OSM standard"		:  basemap_0,
                             "Aerial view (Google)"	:  google_ibrida
                         }
