@@ -1,12 +1,20 @@
 ---
-title: Rivermetrics plugin
+title: RiverMetrics plugin
+description: A toolbox for the extraction of river metrics.
+autor:
 date: 2024-07-04 14:30:00 +0000
 categories: [Qgis, processing]
 tags: [gis, Qgis, processing, manual]     # TAG names should always be lowercase
+pin: false
+math: true
+mermaid: true
+image:
+  path: /media/images/RM2.jpg
+   
+  alt: RiverMetrics icon
 ---
 
 ## Hydromorphological River Metrics
-![RM logo con ombra](https://raw.githubusercontent.com/Freddi-kru/Rivermetrics-plugin---processing/main/other/icons%26logos/RM2.png){: .right}
 
 A toolbox for the extraction of river metrics. Useful for identifying hydromorphological features and analysing the geomorphological evolution of a river over time.    
 It is developed in [Python-3 environment](www.python.org) and is compatible with QGIS 3.22 and later.
