@@ -16,7 +16,7 @@ timezone:
 
 title: (G)is # the main title
 
-tagline: Qualcosa su geografia, geologia geomorfologia, giri in bici e altro # it will display as the sub-title
+tagline: Geografia, Geologia Geomorfologia, Giri nella natura ecc. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Qualcosa su geografia, geologia geomorfologia, giri in bici e altro
@@ -26,10 +26,10 @@ description: >- # used by seo meta and the atom feed
 url: "https://freddi-kru.github.io" 
 
 github:
-  username: github_username # change to your github username
+  username: freddi-kru # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: Andrea.Fredduzz3 # change to your twitter username
 
 social:
   # Change to your full name.
