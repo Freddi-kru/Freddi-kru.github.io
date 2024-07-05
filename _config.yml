@@ -16,14 +16,14 @@ timezone:
 
 title: (G)is # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: Qualcosa su geografia, geologia geomorfologia, giri in bici e altro # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Qualcosa su geografia, geologia geomorfologia, giri in bici e altro.
+  Qualcosa su geografia, geologia geomorfologia, giri in bici e altro
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://freddi-kru.github.io/"
+url: "https://freddi-kru.github.io"
 
 github:
   username: github_username # change to your github username
