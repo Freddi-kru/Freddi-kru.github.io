@@ -1,12 +1,12 @@
 ---
 title: Rivermetrics plugin
 date: 2024-07-04 14:30:00 +0000
-categories: [Gis, Qgis]
+categories: [Qgis, processing]
 tags: [gis, Qgis, processing, manual]     # TAG names should always be lowercase
 ---
 
 ## Hydromorphological River Metrics
-![RM logo con ombra](https://raw.githubusercontent.com/Freddi-kru/Rivermetrics-plugin---processing/main/other/icons%26logos/RM2.png)
+![RM logo con ombra](https://raw.githubusercontent.com/Freddi-kru/Rivermetrics-plugin---processing/main/other/icons%26logos/RM2.png){: .right}
 
 A toolbox for the extraction of river metrics. Useful for identifying hydromorphological features and analysing the geomorphological evolution of a river over time.    
 It is developed in [Python-3 environment](www.python.org) and is compatible with QGIS 3.22 and later.
@@ -23,7 +23,7 @@ The plugin is divided into two parts: the first part is an experimental plugin w
 
 The tools have been grouped into a set called **RM Hydromorphological Analysis**. The set consists of three tools, two of which are split into two parts. There are five QGIS models listed below:
 
-* River axis extraction;
+* [River axis extraction](#river-axis-extraction);
 * Braiding-width 1: measure;
 * Braiding-width 2: reaches mean values;
 * Valley confinement index 1: input data preparation
