@@ -1,9 +1,9 @@
 ---
 title: RiverMetrics plugin
 description: A toolbox for the extraction of river metrics.
-autor:
+autor: freddi
 date: 2024-07-04 14:30:00 +0000
-categories: [Qgis, processing]
+categories: [Qgis, Processing]
 tags: [gis, Qgis, processing, manual]     # TAG names should always be lowercase
 pin: false
 math: true
