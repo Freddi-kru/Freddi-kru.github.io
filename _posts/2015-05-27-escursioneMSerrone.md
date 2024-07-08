@@ -75,15 +75,15 @@ Si prosegue verso W su una radura con bassi ginepri sino alla sella tra le due c
 
 Dalla cima si gode di una bella vista sui rilievi umbri. Da N a E si estende l’Appennino preceduto da colline e vallate: a SE il vicino M. Aguzzo, a S la catena del M. Serano – M. Brunette e a NW il M. Subasio.
 
-![vista a WNW p9](http://freddi-kru.github.io/maps/3d_serrone/IMG_20141227_102718_bis.jpg){: width="1700" height="1055" .w-75}
+![vista a WNW p11](/media/images/serrone_11-1.jpg){: width="1700" height="1055" .w-75}
 _[Punto 11 della webmap](https://umap.openstreetmap.fr/it/map/passeggiata-sul-m-serrone_40213#16/42.9626/12.7816) – Vista a WNW sulla Valle Umbra e sulla cittadina di Foligno._
 
-![vista a NW p9](http://freddi-kru.github.io/maps/3d_serrone/IMG_20141227_101625_bis.jpg){: width="1700" height="1055" .w-75}
+![vista a NW p11](/media/images/serrone_11-2.jpg){: width="1700" height="1055" .w-75}
 _[Punto 11 della webmap](https://umap.openstreetmap.fr/it/map/passeggiata-sul-m-serrone_40213#16/42.9626/12.7816). Vista a NW sul M. Subasio (a sx)._
 
 Si scende in direzione NW con vista sul M. Subasio. Giunti ad un impluvio si gira a sx (SW) su un sentiero poco marcato che si mantiene sul bordo dell’impluvio. Si scende in modo disagevole tra rovi e cespugli sino a ritrovare un evidente sentiero che proviene dal versante opposto (**punto 12**).
 
-![foto punto 13](http://freddi-kru.github.io/maps/3d_serrone/IMG_20141227_111847bis.jpg){: width="1700" height="1055" .w-75 .right}
+![foto punto 13](/media/images/serrone_13.jpg){: width="1700" height="1055" .w-75 .right}
 _[Punto 13 della webmap](https://umap.openstreetmap.fr/it/map/passeggiata-sul-m-serrone_40213#16/42.9582/12.7765). Simpatico affioramento di rocce calcaree stratificate (Formazione della Maiolica)._
 
 Superata una radura da cui si vede l’Abbazia, il sentiero inizia a scendere leggermente sino a passare sotto un elettrodotto ed a arrivare a una strada di servizio (**punto 13**).
@@ -95,7 +95,7 @@ Dal balcone roccioso sul baratro del Fosso Renaro si vede il M. Colognola e il M
 ### 4️⃣ Ritorno all'abbazia di Sassovivo
 Si prosegue a dx in discesa, si passa di nuovo sotto l’elettrodotto e dopo un impluvio si raggiunge un bivio (**punto 14**).
 
-![foto punto 2](http://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sassovivo%2C_cripta_del_beato_alano_01.JPG/800px-Sassovivo%2C_cripta_del_beato_alano_01.JPG){: width="1700" height="1055" .w-75 .right}
+![foto punto 2](/media/images/Serrone2-sailco.JPG){: width="1700" height="1055" .w-75 .right}
 _[Punto 2 della webmap](https://umap.openstreetmap.fr/it/map/passeggiata-sul-m-serrone_40213#16/42.9589/12.7632). Cripta del beato Alano. Photo by [Sailko](http://commons.wikimedia.org/wiki/User:Sailko), license [GFDL](http://www.gnu.org/copyleft/fdl.html) or [CC-BY-SA-3.0](http://creativecommons.org/licenses/by-sa/3.0/)._
 
 Si svolta a sx, in discesa, e si arriva alla sterrata percorsa all’inizio. Svoltando ancora a sx, sempre in discesa, si giunge di nuovo alla Cripta (**punto 2**).
