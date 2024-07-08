@@ -1,6 +1,6 @@
 ---
 title: Passeggiata sul Monte Serrone
-description: Percorso da anello che inzia dalla stupenda Abbazia di Sassovivo
+description: Percorso ad anello che inzia dalla stupenda Abbazia di Sassovivo
 autor: freddi
 date: 2015-05-27 2:00:00 +0000
 categories: [Escursioni, Passeggiata]
