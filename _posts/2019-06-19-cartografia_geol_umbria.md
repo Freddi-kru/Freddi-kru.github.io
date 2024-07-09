@@ -66,7 +66,7 @@ Si ribadisce, per doveri di attribuzione, che l’ **autore del database** è il
 
 Il database geologico contiene 13 layer vettoriali, i cui nomi non sono immediatamente comprensibili: POLUC, LINUC, PIEG, OSS, ma anche POLGM, LINGM, AR, e così via. La pagina internet della Regione Umbria è piuttosto generica e rimanda a:
 
-_Linee guida per l’informatizzazione e per l’allestimento per la stampa dalla banca dati - Quaderno 6” del Servizio Geologico Nazionale (oggi I.S.P.R.A) e sue modificazioni ed integrazioni, nonché nei volumi 1, 2, 3 della III serie degli stessi Quaderni._
+_"Linee guida per l’informatizzazione e per l’allestimento per la stampa dalla banca dati - Quaderno 6”_ del Servizio Geologico Nazionale (oggi I.S.P.R.A) e sue modificazioni ed integrazioni, nonché nei volumi 1, 2, 3 della III serie degli stessi Quaderni.
 
 In effetti tutte le informazioni sono reperibili tra i documenti linkati alla pagina [Banca Dati Geologica](https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/suolo-e-territorio-1/progetto-carg-cartografia-geologica-e-geotematica/banca-dati-geologica) del sito dell’ISPRA. Dopo vario scartabellare è possibile descrivere tutti i layer.
 

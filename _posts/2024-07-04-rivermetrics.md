@@ -21,7 +21,7 @@ It is developed in [Python-3 environment](www.python.org) and is compatible with
 
 The plugin is divided into two parts: the first part is an experimental plugin with a dock in the main QGIS interface, while the second part is a set of tools integrated into QGIS processing.
 
-> **Note**: The [RiverMetrics plugin](https://github.com/pierluigiderosa/RiverMetrics.git) is in the official QGIS repository (experimental flag) and can be easily installed using the standard procedure, via **Plugin Manager**.
+> **Note**: the [RiverMetrics plugin](https://github.com/pierluigiderosa/RiverMetrics.git) is in the official QGIS repository (experimental flag) and can be easily installed using the standard procedure, via **Plugin Manager**.
 {: .prompt-info }
 
  The QGIS RiverMetrics processing tools can be found [here](https://github.com/Freddi-kru/Rivermetrics-plugin---processing).
@@ -75,7 +75,7 @@ As the line obtained may be excessively fragmented, a simplification is carried 
 
 As the resulting line may be split into several parts, the initial vertices of the lines are extracted to facilitate identification of the different parts.
 
-> **Note**: For use as input to the **Rivermetrics plugin** and **Braiding-Width1 model**, the user must then **manually join the line segments together** (edit mode) to obtain a **single line** of a **single part** layer.
+> **Note**: for use as input to the **Rivermetrics plugin** and **Braiding-Width1 model**, the user must then **manually join the line segments together** (edit mode) to obtain a **single line** of a **single part** layer.
 {: .prompt-warning }
 
 ![scheme of main morphological units ](https://raw.githubusercontent.com/Freddi-kru/Rivermetrics-plugin---processing/main/other/images/unita_morfologiche.jpeg) _Fig.1. Main morphological riverbed units, dervied from remote sensing image analysis and GIS processing._ 
