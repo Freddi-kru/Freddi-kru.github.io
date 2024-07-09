@@ -5,5 +5,5 @@ order: 4
 ---
 
 > **In lavorazione ...**
-> ## 🤔 Ummmh
+> ## 🤔
 {: .prompt-tip }

@@ -37,8 +37,9 @@ _Modello 3D dell'escursione._
 
 
 > 🌍 [Apri il modello 3D](http://freddi-kru.github.io/maps/3d_serrone/3d.html)  
-> 🐾 [Scarica la traccia](https://raw.githubusercontent.com/Freddi-kru/maps/master/3d_serrone/passeggiata_sul_m_serrone.gpx)
+> 🐾 [Scarica la traccia](https://raw.githubusercontent.com/Freddi-kru/maps/master/3d_serrone/passeggiata_sul_m_serrone.gpx).[^clic-destro]
 {: .prompt-info }
+
 
 ---
 
@@ -48,6 +49,7 @@ _Modello 3D dell'escursione._
 _Webmap  interattiva realizzata con [uMap](https://umap.openstreetmap.fr/it/) che riporta le informazioni (foto e descrizioni) in corrispondenza dei punti salienti del percorso. Tramite i pulsanti sulla sinistra si può: centrare la mappa sulla propria posizione, cambiare la mappa di sfondo, misurare distanze, fare una ricerca per toponimi e scaricare i dati (pulsante condividi e scarica)._
 > 🗺️ [Apri la mappa interattiva](https://umap.openstreetmap.fr/it/map/passeggiata-sul-m-serrone_40213#14/42.9635/12.7796)
 {: .prompt-info }
+
 
 ---
 ### 1️⃣ Il sentiero sul versante nord-occidentale
@@ -111,3 +113,5 @@ Si può concludere l’escursione visitando l’[Abbazia di Sassovivo](http://it
 
 ![foto punto 1](https://upload.wikimedia.org/wikipedia/commons/6/68/Abbazia_di_sassovivo_01.JPG?uselang=it)
 _[Punto 1 della webmap](https://umap.openstreetmap.fr/it/map/passeggiata-sul-m-serrone_40213#16/42.9565/12.7623). Abbazia di Sassovivo. Photo by [Sailko](http://commons.wikimedia.org/wiki/User:Sailko), license [GFDL](http://www.gnu.org/copyleft/fdl.html) or [CC-BY-SA-3.0](http://creativecommons.org/licenses/by-sa/3.0/)_
+
+[^clic-destro]: Utilzzare il tasto destro del mouse -> _Salva destinazione con nome..._
