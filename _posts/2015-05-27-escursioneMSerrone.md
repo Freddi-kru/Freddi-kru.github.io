@@ -1,6 +1,6 @@
 ---
 title: Passeggiata sul Monte Serrone
-description: Percorso ad anello che inzia dalla stupenda Abbazia di Sassovivo
+description: Percorso ad anello che inzia dalla stupenda Abbazia di Sassovivo - Foligno (PG)
 autor: freddi
 date: 2015-05-27 2:00:00 +0000
 categories: [Escursioni, Passeggiata]
@@ -17,7 +17,7 @@ image:
 Si tratta di un percorso ad anello che inizia dall’[Abbazia di Sassovivo](https://it.wikipedia.org/wiki/Abbazia_di_Sassovivo), in particolare dalla Cripta del beato Alano (574 m s.l.m).
 
 L’Abbazia si trova a circa 7 km da Foligno (PG).  
-Provenendo da Perugia si raggiunge, una volta arrivati nei pressi di Foligno, prendendo la statale SS3 Flaminia in direzione Spoleto-Roma. Successivamente si svolta allo svincolo Colfiorito – Norcia – Macerata e immediatamente dopo si gira a dx per Sassovivo.
+Provenendo da Perugia si raggiunge, una volta arrivati nei pressi di Foligno, prendendo la statale SS 3 Flaminia in direzione Spoleto-Roma. Successivamente si svolta allo svincolo Colfiorito – Norcia – Macerata (SS 77) e immediatamente dopo si gira a dx per Uppello - Sassovivo.
 
 Il percorso è piuttosto accessibile, l’unica difficoltà è rappresentata dall’individuazione del sentiero in alcuni tratti (consigliata la bussola e il GPS).
 
@@ -29,23 +29,24 @@ Il percorso è piuttosto accessibile, l’unica difficoltà è rappresentata dal
 | --- | --- | --- |--- |--- |
 | 8 km | 3 ore | medio - bassa | 480 m| 1046 m s.l.m. |
 
-![Profilo altimetrico](https://freddikru.wordpress.com/wp-content/uploads/2015/05/screenshot_2014-12-28-15-48-11.png)
+![Profilo altimetrico](https://freddikru.wordpress.com/wp-content/uploads/2015/05/screenshot_2014-12-28-15-48-11.png){: width="1876" height="732" .w-75}
 _Profilo altimetrico dell'escursione._
 
-![immagine del modello 3D](https://freddikru.wordpress.com/wp-content/uploads/2015/05/3d_rit.png)
-_Modello 3D dell'escursione. Cliccando sul pulsante sottostante si accede al modello 3d orbitabile._
+![immagine del modello 3D](https://freddikru.wordpress.com/wp-content/uploads/2015/05/3d_rit.png){: width="760" height="595" .w-75}
+_Modello 3D dell'escursione._
+
 
 > 🌍 [Apri il modello 3D](http://freddi-kru.github.io/maps/3d_serrone/3d.html)  
-> 🐾 [Scarica la traccia dell'escursione](https://dl.dropboxusercontent.com/u/5599245/prove/serrone/passeggiata_sul_m_serrone.gpx)
+> 🐾 [Scarica la traccia](https://raw.githubusercontent.com/Freddi-kru/maps/master/3d_serrone/passeggiata_sul_m_serrone.gpx)
 {: .prompt-info }
 
 ---
 
 ## 🚶 Descrizione dell'itinerario
 
-![mappa di Umap](https://freddikru.files.wordpress.com/2015/05/mappa_serrone.jpg)
-_Webmap  interattiva realizzata con [umap](https://umap.openstreetmap.fr/it/) che riporta le informazioni (foto e descrizioni) in corrispondenza dei punti salienti del percorso. Tramite i pulsanti sulla sinistra si può: centrare la mappa sulla propria posizione, cambiare la mappa di sfondo, misurare distanze e fare una ricerca per toponimi, scaricare i dati (pulsante condividi e scarica)._
-> 🗺️ [Apri la mappa interattiva dell'escursione](https://umap.openstreetmap.fr/it/map/passeggiata-sul-m-serrone_40213#14/42.9635/12.7796)
+![mappa di Umap](https://i.postimg.cc/8zRg1tVR/serrone-TOT.png)
+_Webmap  interattiva realizzata con [uMap](https://umap.openstreetmap.fr/it/) che riporta le informazioni (foto e descrizioni) in corrispondenza dei punti salienti del percorso. Tramite i pulsanti sulla sinistra si può: centrare la mappa sulla propria posizione, cambiare la mappa di sfondo, misurare distanze, fare una ricerca per toponimi e scaricare i dati (pulsante condividi e scarica)._
+> 🗺️ [Apri la mappa interattiva](https://umap.openstreetmap.fr/it/map/passeggiata-sul-m-serrone_40213#14/42.9635/12.7796)
 {: .prompt-info }
 
 ---
@@ -55,7 +56,7 @@ Dalla Cripta, dove è possibile parcheggiare, si percorre per un breve tratto la
 
 Al bivio successivo (**punto 5**) si trascura il sentiero che scende a sx (segnavia 60) verso Pale e si prende quello a dx che sale blandamente nel bosco. Si arriva a una piccola radura (**punto 6**) con vista sul Sasso di Pale, caratterizzato da una grande croce metallica e da una antenna per le telecomunicazioni. Il sentiero rientra nel bosco, oltrepassa un fosso e arriva ad un’altra radura più estesa (**punto 7**).
 
-![punto 7 - foto](https://lh3.googleusercontent.com/_1hfTV12h0Mmj0uke1Q4QfXEAfGheYjyVyYYF35ucXLVMeJr7aVndTSlfMjNGzGKyMRfla65B5Mck8_1PAVJoLwr-xYnL3ojJwdhamig50NXotnUSTtUQoHaByLc7VenRI6_3JdSYbllnGyu67VyWUN4DwWlIWF-1ndAu9zVPWC83EZvlAGe9TRl-8ZvrWlqKC2OQQvoTyb2q-63MRYMdnHWO-QyQgmmbbgGax03UB4-wAK-Zlar6t1K2la_cO-gHR_z1qOb1kHjq4fRaiRb-iNvJQEykzYSFhPJ2naQt0vUs6WCSF79TSq3BOQfRm-2lzESKfTtMjVMl0rGI7PgZ1UIPWVMIny-lePZCOKFQaIX0dNkhN2epjXXKsZO2K4PfKXUyHjAkEyVUWfSqcFoIo0HOxxwmjJBR23QW9x1x1eEZTZjV5Vh-1YT5V6kMrGNNWtlbkcmnxJjcxVijBOQKBApXHkgOhQ1osk02SG06WduCjifP1vvfTK8eZAAJec3afKYjOry0G2gm4es1iEzUuVao-Ei128mpdJxKFLAG0E8TPo3B5Et7tVW34lQuqZNGYLcuyNRtNhZqYI3YUYlB6Rbhpezby347ZnLi-T8OfjVtol_oNa-YAOeudg4q3kOBuEvJqBqt8m2bJJUh1dPwAneIFQm8RA4sw-CLwOOU9i7UIbgSVJh1pagr-CtxZf9AmU-yUTadedmHPs5dPRVU4RsImaFj_3D5ggqQpYz1KczY9o7wUNF_Nczs2Vh7ZDS7MS1uftaT6oF1vbpuG5JbqjWATsQfMFJMfsZ_ntwuPI-5G5eB2BgGLHu3ooOU1jQqK9JoDXyY-MapWq5RMkONh97OswPAV_fiu5_KOFvF-sjO_FraeypEWqWs2hklJwHtXhr7BKmzuiFnR757PUI4GHGjUmsUxSIDeEYxJd4jkvz=w1119-h629-no?authuser=0){: .w-75 .right}
+![punto 7 - foto](/media/images/serroneP7.jpg){: .w-75 .right}
 _[Punto 7 della webmap](https://umap.openstreetmap.fr/it/map/passeggiata-sul-m-serrone_40213#16/42.9741/12.7786). Vista del Sasso di Pale e del M. Penninno sullo sfondo._
 
 ---
@@ -92,7 +93,7 @@ Dal balcone roccioso sul baratro del Fosso Renaro si vede il M. Colognola e il M
 
 ---
 
-### 4️⃣ Ritorno all'abbazia di Sassovivo
+### 4️⃣ Rientro all'abbazia di Sassovivo
 Si prosegue a dx in discesa, si passa di nuovo sotto l’elettrodotto e dopo un impluvio si raggiunge un bivio (**punto 14**).
 
 ![foto punto 2](/media/images/Serrone2-sailco.JPG){: width="1700" height="1055" .w-75 .right}
