@@ -12,6 +12,7 @@ image:
   path: /media/images/Guida_G-turistica_copertina.jpeg
   
   alt: Orvieto Underground
+
 ---
 
 Web map turistica di Orvieto realizzata con [Leaflet](http://leafletjs.com/)
