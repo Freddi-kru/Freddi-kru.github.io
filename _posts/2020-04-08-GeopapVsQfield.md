@@ -1,5 +1,5 @@
 ---
-title: Qfield vs Geopaparazzi
+title: QField vs Geopaparazzi
 description: QField vs Geopaparazzi, qual'è la migliore app opensource per il rilievo in campo?
 author: pierlu
 date: 2020-04-08 13:00:00 +0000
@@ -8,7 +8,9 @@ tags: [rilevamento, Qfield, Geopaparazzi, versus]     # TAG names should always 
 pin: false
 math: true
 mermaid: true
-
+image:
+  path: https://i.postimg.cc/d18bRMVn/Q-vs-G.gif
+  
 ---
   
 
@@ -31,7 +33,7 @@ Oltre ai dati cartografici che si possono utilizzare come sfondo i vettoriali so
 
 Già da qualche versione inoltre geopaparazzi ha aggiunto la possibilità di editare i layer puntuali e poligonali. L’editing dei poligoni è relativamente semplice quando si deve creare un nuovo poligono potendo anche aggiungere un vertice del poligono corrispondente alla posizione GPS. Più articolata invece risulta la modifica. Nel caso infatti si voglia fare un reshape (modifica della forma) si deve seguire una strada con una logica diversa rispetto a quanto accade in un classico GIS dove si attivano i vertici e l’utente può interagire con essi. In Geopaparazzi è necessario creare un nuovo poligono sovrapposto a quello che si vuole modificare e poi operare una sottrazione oppure una unione a seconda della necessità.
 
-La parte sicuramente interessante di Gepaparazzi è la possibilità di raccogliere dati in campo. Ha la possibilità di creare dei form altamente personalizzati (maschere di inserimento) che sono ocnfigurabili attraverso un file di testo in formato json. Ogni elemento rilevato corrisponde ad un punto che viene salvato nel progetto corrente.
+La parte sicuramente interessante di Gepaparazzi è la possibilità di raccogliere dati in campo. Ha la possibilità di creare dei form altamente personalizzati (maschere di inserimento) che sono configurabili attraverso un file di testo in formato json. Ogni elemento rilevato corrisponde ad un punto che viene salvato nel progetto corrente.
 
 Geopaparazzi, all’avvio, chiede di creare un progetto che ha estensione .gpap che altro non è che un db sqlite che contiene tutti i dati rilevati oltre che le foto che sono state scattate. Le foto sono scattate con l’applicazione predefinita del telefono alla massima risoluzione possibile e salvate come blob nel file .gpap. Al termine del rilievo quindi tutto il rilievo è salvato in un unico file .gpap che poi deve essere gestito nel proprio Desktop GIS preferito.
 
@@ -69,7 +71,7 @@ Una volta eseguito il rilievo basta importare sul Desktop PC la cartella dal pro
 
 ---
 
-## Il Confronto **QField vs Geopaparazzi**
+## Il Confronto
 
 
 | Geopaparazzi | Caratteristica | QField |
@@ -78,7 +80,7 @@ Una volta eseguito il rilievo basta importare sul Desktop PC la cartella dal pro
 | si  | spatialite | si  |
 | si  | geopackage | si  |
 | no  | shapefile | si  |
-| no  | WMS | si  |
+| si  | WMS | si  |
 | si  | TMS | si  |
 | no  | Postgis |     |
 | si  | editing di punti | si  |
@@ -90,8 +92,8 @@ Una volta eseguito il rilievo basta importare sul Desktop PC la cartella dal pro
 | si (GvSig) | Integrazione con altri GIS | no  |
 | si  | registrazione azimuth foto | no  |
 | si  | registrazione punto di scatto e quota | si  |
-| si in PDF | Esportazione nell’app del rilievo | no  |
-| si [secondo questa guida](https://www.openstreetmap.org/user/Cascafico/diary/391537) | Esportazione in OSM | no ma tramite QGIS |
+| si (PDF) | Esportazione nell’app del rilievo | no  |
+| si ([guida](https://www.openstreetmap.org/user/Cascafico/diary/391537)) | Esportazione in OSM | no (si usa QGIS) |
 
 ## Conclusioni
 
