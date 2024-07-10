@@ -11,7 +11,7 @@ mermaid: true
 image:
   path: /media/images/copertina.jpeg
   
-  alt: Esempio di cartografia geologica prodotta con gli stili per Qgis.
+  alt: Esempio di cartografia geologica prodotta con gli stili per Qgis
 ---
 
 Da qualche tempo la Regione Umbria ha pubblicato i dati della cartografia geologica, prodotta nell’ambito del Progetto [CARG](https://www.isprambiente.gov.it/it/progetti/cartella-progetti-in-corso/suolo-e-territorio-1/progetto-carg-cartografia-geologica-e-geotematica), in formato vettoriale. Si tratta di dati molto utili e va dato atto al Servizio Geologico e Sismico della Regione Umbria del buon lavoro svolto, visto anche il ritardo di molte altre regioni italiane in quest’ambito.
