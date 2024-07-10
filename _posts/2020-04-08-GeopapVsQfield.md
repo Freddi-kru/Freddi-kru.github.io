@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: https://i.postimg.cc/d18bRMVn/Q-vs-G.gif
+  path: https://i.postimg.cc/yYwvPHV0/QField-contro-Geopaparazzi-1.gif
   
 ---
   
