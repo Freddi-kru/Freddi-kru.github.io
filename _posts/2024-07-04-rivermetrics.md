@@ -75,7 +75,9 @@ As the line obtained may be excessively fragmented, a simplification is carried 
 
 As the resulting line may be split into several parts, the initial vertices of the lines are extracted to facilitate identification of the different parts.
 
-> **Note**: for use as input to the **Rivermetrics plugin** and **Braiding-Width1 model**, the user must then **manually join the line segments together** (edit mode) to obtain a **single line** of a **single part** layer.
+> **Note**: for use as input to the **Rivermetrics plugin** and **Braiding-Width1 model** 
+> - the user must then **manually join the line segments together** (edit mode) to obtain a **single line** of a **single part** layer;
+> - make sure that the **direction** of the axis is **from upstream to downstream**. If not, reverse the direction of the line by editing the vector.
 {: .prompt-warning }
 
 ![scheme of main morphological units ](https://raw.githubusercontent.com/Freddi-kru/Rivermetrics-plugin---processing/main/other/images/unita_morfologiche.jpeg) _Fig.1. Main morphological riverbed units, dervied from remote sensing image analysis and GIS processing._ 
