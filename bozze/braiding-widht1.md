@@ -6,3 +6,5 @@ The plugin calculates the braiding index along the riverbed axis at a user-selec
 The toolbox model can be deployed following the subdivision of river pathways into homogeneous sections. It enables the calculation of a number of significant geomorphological parameters in addition to the braiding index. These include: the total width, effective width, number of channels separated by active bars, the number of channels separated by islands (bars with tree vegetation), and the presence of active bars at each measuring point (transect).
 
 Subsequently, utilising the Braiding-width 2 model (reaching mean values), the mean values of the parameters calculated by the preceding model for each stretch are averaged, thereby yielding the following results: average total width, average effective width, braiding index, anastomosing index, and the frequency (in percentage) of active bars. 
+
+### 🏞️ Concepts of river geomorphology
